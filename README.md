@@ -8,7 +8,7 @@
 1. Clone the repository
 
    ```bash
-   $ git clone https://github.com/alexxispn/nestjs-pokedex.git
+   $ git clone https://github.com/alexxispn/nest-pokedex.git
    ```
 
 2. Install NestJS CLI
