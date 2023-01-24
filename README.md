@@ -34,6 +34,12 @@
    ```bash
    $ pnpm run start:dev
    ```
+   
+6. Recreate the data with the seed
+
+   ```bash
+   $ http://localhost:3000/api/seed
+   ```
 
 ## Stack used
 
