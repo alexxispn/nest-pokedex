@@ -36,4 +36,4 @@ lerna-debug.log*
 
 /mongo
 .env
-.pnpm-lock.yaml
+pnpm-lock.yaml
