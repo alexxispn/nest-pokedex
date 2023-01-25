@@ -3,6 +3,13 @@
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
 
+<h2 align="center">Stack used</h2>
+<p align="center">
+<a href="#"><img src="https://img.shields.io/badge/-NestJS-E0234E?style=for-the-badge&logo=NestJS&"></a>
+<a href="#"><img src="https://img.shields.io/badge/-Docker-2496ED?style=for-the-badge&logo=Docker&logoColor=white"></a>
+<a href="#"><img src="https://img.shields.io/badge/-MongoDB-47A248?style=for-the-badge&logo=MongoDB&logoColor=white"></a>
+<a href="#"><img src="https://img.shields.io/badge/-TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white"></a>
+</p>
 
 # 📁 Collection: Pokemon
 
@@ -170,11 +177,3 @@
     $ docker compose -f docker-compose.prod.yaml --env-file .env.prod up --build
     ```
 
-
-
-## Stack used
-
-<a href="#"><img src="https://img.shields.io/badge/-NestJS-E0234E?style=for-the-badge&logo=NestJS&"></a>
-<a href="#"><img src="https://img.shields.io/badge/-Docker-2496ED?style=for-the-badge&logo=Docker&logoColor=white"></a>
-<a href="#"><img src="https://img.shields.io/badge/-MongoDB-47A248?style=for-the-badge&logo=MongoDB&logoColor=white"></a>
-<a href="#"><img src="https://img.shields.io/badge/-TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white"></a>
