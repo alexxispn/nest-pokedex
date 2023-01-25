@@ -29,13 +29,21 @@
    $ docker-compose up -d
    ```
 
-5. Run the application
+5. Clone the file `.env.example` and rename it to `.env`
+
+   ```bash
+   $ cp .env.example .env
+   ```
+   
+6. Set the environment variables
+   
+7. Run the application
 
    ```bash
    $ pnpm run start:dev
    ```
-   
-6. Recreate the data with the seed
+
+8. Recreate the data with the seed
 
    ```bash
    $ http://localhost:3000/api/seed
@@ -47,4 +55,3 @@
 <a href="#"><img src="https://img.shields.io/badge/-Docker-2496ED?style=for-the-badge&logo=Docker&logoColor=white"></a>
 <a href="#"><img src="https://img.shields.io/badge/-MongoDB-47A248?style=for-the-badge&logo=MongoDB&logoColor=white"></a>
 <a href="#"><img src="https://img.shields.io/badge/-TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white"></a>
-
