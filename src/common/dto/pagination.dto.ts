@@ -1,4 +1,4 @@
-import { IsInt, IsNumber, IsOptional, IsPositive, Min } from 'class-validator';
+import { IsInt, IsOptional, IsPositive, Min } from 'class-validator';
 import { Type } from 'class-transformer';
 
 export class PaginationDto {
