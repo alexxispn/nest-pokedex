@@ -1,17 +1,136 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Nest Pokedex</title>
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-<header>
-  <h1>Nest Pokedex</h1>
-</header>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Nest Pokedex</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <h1>NestJS Pokedex</h1>
+    <img
+      src="https://nestjs.com/img/logo-small.svg"
+      width="200"
+      alt="Nest Logo"
+    />
+    <h1 id="-collection-pokemon">📁 Collection: Pokemon</h1>
+    <div class="container">
+    <h2 id="end-point-get-pokemon">End-point: Get pokemon</h2>
+    <h3 class="method-get">Method: GET</h3>
+    <blockquote>
+      <pre><code>http:<span class="regexp">//</span>localhost:<span class="number">3000</span><span
+        class="regexp">/api/</span>pokemon?limit=<span class="number">6</span>&amp;offset=<span
+        class="number">1</span>
+</code></pre>
+      <h3 id="query-params">Query Params</h3>
+    </blockquote>
+    <table>
+      <thead>
+        <tr>
+          <th>Param</th>
+          <th>value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>limit</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>offset</td>
+          <td>1</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+      ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+    </p>
+    </div>
+    <div class="container">
+    <h2 id="end-point-get-pokemon-term">End-point: Get pokemon/:term</h2>
+    <h3 class="method-get">Method: GET</h3>
+    <blockquote>
+      <pre><code><span class="symbol">http:</span>/<span class="regexp">/localhost:3000/api</span><span
+        class="regexp">/pokemon/</span><span class="number">63</span>cfca329c1ec789116ec596
+<span class="symbol">http:</span>/<span class="regexp">/localhost:3000/api</span><span class="regexp">/pokemon/bulbasur</span>
+<span class="symbol">http:</span>/<span class="regexp">/localhost:3000/api</span><span class="regexp">/pokemon/</span><span
+          class="number">1</span>
+</code></pre>
+    </blockquote>
+    <p>
+      ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+      ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+    </p>
+    </div>
+    <div class="container">
+    <h2 id="end-point-post-pokemon">End-point: Post pokemon</h2>
+    <h3 id="method-post">Method: POST</h3>
+    <blockquote>
+      <pre><code>http:<span class="regexp">//</span>localhost:<span class="number">3000</span><span
+        class="regexp">/api/</span>pokemon
+</code></pre>
+      <h3 class="body-raw">Body (<strong>raw</strong>)</h3>
+    </blockquote>
+    <pre><code class="lang-json">{
+    <span class="attr">"name"</span>: <span class="string">"charmander"</span>,
+    <span class="attr">"no"</span>: <span class="number">4</span>
+}
+</code></pre>
+    <p>
+      ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+      ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+    </p>
+    </div>
+    <div class="container">
+    <h2 id="end-point-patch-pokemon">End-point: Patch pokemon/:term</h2>
+    <h3 id="method-patch">Method: PATCH</h3>
+    <blockquote>
+      <pre><code><span class="symbol">http:</span>/<span class="regexp">/localhost:3000/api</span><span
+        class="regexp">/pokemon/</span><span class="number">63</span>cfca329c1ec789116ec596
+<span class="symbol">http:</span>/<span class="regexp">/localhost:3000/api</span><span class="regexp">/pokemon/bulbasur</span>
+<span class="symbol">http:</span>/<span class="regexp">/localhost:3000/api</span><span class="regexp">/pokemon/</span><span
+          class="number">1</span>
+</code></pre>
+      <h3 class="body-raw">Body (<strong>raw</strong>)</h3>
+    </blockquote>
+    <pre><code class="lang-json">{
+    <span class="attr">"name"</span>: <span class="string">"bulbasur"</span>,
+    <span class="attr">"no"</span>: <span class="number">1</span>
+}
+</code></pre>
+    <p>
+      ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+      ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+    </p>
+    </div>
+    <div class="container">
+    <h2 id="end-point-delete-pokemon">End-point: Delete pokemon/:id</h2>
+    <h3 id="method-delete">Method: DELETE</h3>
+    <blockquote>
+      <pre><code>http:<span class="regexp">//</span>localhost:<span class="number">3000</span><span
+        class="regexp">/api/</span>pokemon<span class="regexp">/63d05c15e9af67f9838506d5</span>
+</code></pre>
+    </blockquote>
+    <p>
+      ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+      ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+    </p>
+    <h2 id="end-point-seed">End-point: Seed</h2>
+    <h3 class="method-get">Method: GET</h3>
+    <blockquote>
+      <pre><code>http:<span class="regexp">//</span>localhost:<span class="number">3000</span><span
+        class="regexp">/api/</span>seed
+</code></pre>
+    </blockquote>
+    <p>
+      ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+      ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+    </p>
+    </div>
+  </body>
 </html>
